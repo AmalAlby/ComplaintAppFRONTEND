@@ -17,7 +17,7 @@ export class AdmloginComponent {
   readValues = ()=>{
     if(this.username=="admin"&&this.password=="12345"){
       alert("Logged in")
-      // this.route.navigate(["/dboard"])
+      this.route.navigate(["/dboard"])
     }else{
       alert("Invalid Credentials");
     }
