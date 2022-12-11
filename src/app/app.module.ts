@@ -8,11 +8,16 @@ import { AdmnavbarComponent } from './admnavbar/admnavbar.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { AdmdashboardComponent } from './admdashboard/admdashboard.component';
 
 const myroutes:Routes = [
   {
     path:"",
     component:AdmloginComponent
+  },
+  {
+    path:"/dboard",
+    component:AdmdashboardComponent
   }
 ]
 
@@ -20,7 +25,8 @@ const myroutes:Routes = [
   declarations: [
     AppComponent,
     AdmloginComponent,
-    AdmnavbarComponent
+    AdmnavbarComponent,
+    AdmdashboardComponent
   ],
   imports: [
     BrowserModule,
